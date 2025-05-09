@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 45rem;
+    background-image: url(bg_image.jpg);
+    background-size: cover;
+}
+
+
+/* NavBar */
+.navbar {
+    height: 7rem;
+    background-color: rgba(0, 0, 0, 0.763);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    height: 3rem;
+    width: 9rem;
+    margin-left: 13rem;
+    background-image: url(netflix_logo.png);
+    background-size: cover;
+} 
+
+.nav-options {
+    margin-right: 13rem;
+}
+
+.lang-select {
+    height: 2rem;
+    width: 7rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+.nav-lang {
+    background-color: white;
+    color: black;
+}
+
+.signin-button {
+    height: 2rem;
+    width: 5rem;
+    background-color: red;
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 550;
+    border-radius: 0.25rem;
+}
+
+.signin-button:hover {
+    background-color: rgb(210, 16, 16);
+}
+
+/* NavPannel */
+.nav-pannel {
+    height: 38rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.763);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pannel-details {
+    height: 34rem;
+}
+
+.pannel-heading {
+    height: 6rem;
+    width: 36rem;
+    font-size: 3.25rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.pannel-offer {
+    height: 1.25rem;
+    width: 36rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4.25rem;
+    margin-bottom: 2rem;
+}
+
+.pannel-info {
+    height: 3rem;
+    width: 36rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.pannel-contact {
+    height: 3.5rem;
+}
+
+.pannel-input {
+    height: 3.5rem;
+    width: 23rem;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid rgba(243, 211, 211, 0.605);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.pannel-input:active {
+    border: 2px solid white;
+}
+
+.input-button {
+    height: 3.5rem;
+    width: 13rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.input-button:hover {
+    background-color: rgb(210, 16, 16);
+}
+
+/* ContentArea */
+.content {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 8rem 0rem 5rem 7rem;
+}
+
+.container {
+    height: 20rem;
+    width: 80rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-heading {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+    padding-left: 1.1rem;
+}
+
+.content-box {
+    height: 16rem;
+    width: 18rem;
+    background: linear-gradient(to bottom, rgba(28,26,51,255), rgba(32,18,31,255));
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.box-heading {
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-description {
+    font-size: 1rem;
+    color: rgba(218, 223, 228, 0.803);
+}
+
+/* FAQArea */
+.faq-area {
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+}
+
+.faq-heading {
+    font-size: 1.5rem;
+    font-weight: 550; 
+}
+
+.faq-select {
+    height: 5rem;
+    width: 80rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: start;
+    color: white;
+    background-color: rgb(52, 49, 49);
+    border: none;
+    margin-bottom: -1rem;
+}
+
+.faq-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: inline;
+    font-size: 5rem;
+    position: relative;
+    right: 3.75rem;
+    top: 1.15rem;
+}
+
+.faq-select:hover {
+    background-color: rgb(73, 69, 69);
+}
+
+/* RegistrationArea */
+.registration {
+    display: flex;
+    justify-content: center;
+    padding-right: 5rem;
+}
+
+.registration p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.registration-corner {
+    height: 3.5rem;
+}
+
+.registration-input {
+    height: 3.5rem;
+    width: 40rem;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid rgba(243, 211, 211, 0.605);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.registration-input:active {
+    border: 2px solid white;
+}
+
+.registration-button {
+    height: 3.5rem;
+    width: 13rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.registration-button:hover {
+    background-color: rgb(210, 16, 16);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer-area {
+    padding-left: 8rem;
+}
+
+.helpline {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 550;
+    margin-bottom: 3rem;
+}
+
+.footer-links {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+li a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-right: 13rem;
+}
+
+.footer-langbutton {
+    margin-bottom: 3rem;
+}
+
+.footer-langselect {
+    height: 2rem;
+    width: 7rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+.footer-lang {
+    background-color: white;
+    color: black;
+}
+
+.footer-logo {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    padding-bottom: 5rem;
+}
