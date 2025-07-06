@@ -1,333 +1,398 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: arial;
-    box-sizing: border-box;
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 header {
-    width: 100vw;
-    height: 45rem;
-    background-image: url(bg_image.jpg);
-    background-size: cover;
+  background-image: url(bg_image.jpg);
+  height: 100vh;
 }
 
+.head-content {
+  background-color: rgba(0, 0, 0, 0.801);
+}
 
-/* NavBar */
 .navbar {
-    height: 7rem;
-    background-color: rgba(0, 0, 0, 0.763);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 11vh;
+  display: flex;
+  margin-bottom: 67vh;
 }
 
-.nav-logo {
-    height: 3rem;
-    width: 9rem;
-    margin-left: 13rem;
-    background-image: url(netflix_logo.png);
-    background-size: cover;
-} 
-
-.nav-options {
-    margin-right: 13rem;
+.navbar img {
+  width: 10vw;
+  margin-left: 9vw;
 }
 
-.lang-select {
-    height: 2rem;
-    width: 7rem;
-    background-color: transparent;
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 0.25rem;
+.options {
+  margin-right: 10vw;
 }
 
-.nav-lang {
-    background-color: white;
-    color: black;
+.options .lang-select {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 0.5vw;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  margin-right: 0.5vw;
+}
+
+.lang-select option {
+  background-color: white;
+  color: black;
 }
 
 .signin-button {
-    height: 2rem;
-    width: 5rem;
-    background-color: red;
-    margin-left: 0.5rem;
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 550;
-    border-radius: 0.25rem;
+  border: none;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  border-radius: 0.5vw;
+  background-color: red;
+  color: white;
+  font-weight: 500;
 }
 
-.signin-button:hover {
-    background-color: rgb(210, 16, 16);
-}
-
-/* NavPannel */
 .nav-pannel {
-    height: 38rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.763);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pannel-details {
-    height: 34rem;
+  text-align: center;
+  position: relative;
+  bottom: 44vh;
 }
 
 .pannel-heading {
-    height: 6rem;
-    width: 36rem;
-    font-size: 3.25rem;
-    font-weight: 900;
-    text-align: center;
+  font-size: 3.5vw;
+  font-weight: 900;
+  line-height: 9vh;
 }
 
 .pannel-offer {
-    height: 1.25rem;
-    width: 36rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 4.25rem;
-    margin-bottom: 2rem;
+  font-size: 1.25vw;
+  font-weight: 700;
 }
 
 .pannel-info {
-    height: 3rem;
-    width: 36rem;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-.pannel-contact {
-    height: 3.5rem;
+  font-weight: 500;
+  font-size: 1vw;
+  margin-top: 4vh;
 }
 
 .pannel-input {
-    height: 3.5rem;
-    width: 23rem;
-    background-color: transparent;
-    color: white;
-    border: 0.5px solid rgba(243, 211, 211, 0.605);
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    font-weight: 600;
-    padding-left: 1rem;
+  height: 8vh;
+  width: 23vw;
+  border-radius: 0.25vw;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  color: rgba(255, 255, 255, 0.724);
+  padding-left: 1vw;
+  font-weight: 500;
 }
 
-.pannel-input:active {
-    border: 2px solid white;
+.pannel-input::placeholder {
+  color: rgba(255, 255, 255, 0.724);
+  font-weight: 500;
 }
 
 .input-button {
-    height: 3.5rem;
-    width: 13rem;
-    box-sizing: border-box;
-    border-radius: 0.25rem;
-    background-color: red;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
+  height: 8vh;
+  width: 13vw;
+  margin-left: 0.5vw;
+  font-size: 1.5vw;
+  border-radius: 0.25vw;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: 700;
 }
 
-.input-button:hover {
-    background-color: rgb(210, 16, 16);
+.extra {
+  height: 35vh;
+  border-top: 0.75vh solid red;
+  margin-top: 15vh;
+  border-radius: 50%;
+  background-color: #00000075;
 }
 
-/* ContentArea */
-.content {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    padding: 8rem 0rem 5rem 7rem;
+.trending-now {
+  position: relative;
+  z-index: 1;
+  background-color: black;
 }
 
-.container {
-    height: 20rem;
-    width: 80rem;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-around;
+.trending-now h4 {
+  margin-left: 10vw;
+  padding-top: 5vh;
+  font-weight: 700;
+  background-color: black;
+}
+
+.trend-img {
+  width: 80vw;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: 10vw;
+}
+
+.trend-img::-webkit-scrollbar {
+  display: none;
+}
+
+.trend-img .card {
+  background-color: black;
+  height: 40vh;
+  width: 13vw;
+  margin-left: 0.5vw;
+  margin-top: 2vh;
+  transition: transform 0.2s linear;
+}
+
+.trend-img .card img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1vw;
+}
+
+.trend-img .card:hover {
+  transform: scale(1.06);
+}
+
+.img-num {
+  color: rgba(0, 0, 0, 0.74);
+  -webkit-text-stroke: 1.5px white;
+  font-weight: 700;
+  font-size: 7vw;
+  position: relative;
+  bottom: 22vh;
+  right: 1.75vw;
 }
 
 .content-heading {
-    font-size: 1.5rem;
-    font-weight: 550;
-    margin-bottom: 1rem;
-    padding-left: 1.1rem;
+  padding-top: 4vh;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  font-weight: 700;
 }
 
-.content-box {
-    height: 16rem;
-    width: 18rem;
-    background: linear-gradient(to bottom, rgba(28,26,51,255), rgba(32,18,31,255));
-    border-radius: 1rem;
-    padding: 1rem;
+.container {
+  display: flex;
+  margin-left: 10vw;
 }
 
-.box-heading {
-    font-size: 1.5rem;
-    font-weight: 550;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+.container .card {
+  background: linear-gradient(to right, #1a1f40e0, #2a1627);
+  color: white;
+  height: 39vh;
+  width: 18.5vw;
+  margin-right: 1vw;
 }
 
-.box-description {
-    font-size: 1rem;
-    color: rgba(218, 223, 228, 0.803);
+.container .card .card-body .card-title {
+  font-weight: 500;
+  margin-bottom: 2vh;
 }
 
-/* FAQArea */
-.faq-area {
-    padding-left: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 7rem;
+.card-icon {
+  text-align: end;
+  color: brown;
+  font-size: 3vw;
+  margin-top: 6.5vh;
+}
+
+.smile-icon {
+  position: relative;
+  bottom: 2.5vh;
+  left: 2.5vw;
+  z-index: 1;
+  background: linear-gradient(to right, rgb(248, 171, 185), rgb(253, 130, 151));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.smile-icon2 {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to right, rgb(139, 2, 252), rgb(255, 0, 43));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-eye {
+  background: linear-gradient(to right, orange, rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-circle-down {
+  background: linear-gradient(to right, rgb(241, 128, 252), rgb(243, 50, 82));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-desktop {
+  background: linear-gradient(
+    to right,
+    rgb(158, 5, 5),
+    rgb(112, 5, 112),
+    rgb(246, 57, 192)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content {
+  background-color: black;
+}
+
+.join-card {
+  color: rgb(177, 175, 175);
+  font-weight: 600;
 }
 
 .faq-heading {
-    font-size: 1.5rem;
-    font-weight: 550; 
+  margin-left: 10vw;
+  font-weight: 700;
+  margin-top: 4vh;
+}
+
+.faq {
+  margin-left: 11vw;
+  margin-bottom: 1vh;
+  background-color: #2d2d2d;
+  width: 78vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s linear;
+}
+
+.faq-1 {
+  margin-top: 4vh;
+}
+
+.faq:hover {
+  background-color: #3d3c3c;
+}
+
+.faq-ans {
+  margin-left: 11vw;
+  margin-bottom: 0.5vh;
+  background-color: #2d2d2d;
+  width: 78vw;
+  font-size: 1.5vw;
+  color: white;
+  padding: 2.5vh 2vw 3vh 1vw;
+  position: relative;
+  bottom: 0.7vh;
+  display: none;
 }
 
 .faq-select {
-    height: 5rem;
-    width: 80rem;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    padding: 1rem;
-    text-align: start;
-    color: white;
-    background-color: rgb(52, 49, 49);
-    border: none;
-    margin-bottom: -1rem;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5vw;
+  color: white;
+  margin-left: 1vw;
 }
 
 .faq-button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    display: inline;
-    font-size: 5rem;
-    position: relative;
-    right: 3.75rem;
-    top: 1.15rem;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 3.5vw;
+  color: white;
+  margin-right: 1vw;
 }
 
-.faq-select:hover {
-    background-color: rgb(73, 69, 69);
-}
-
-/* RegistrationArea */
 .registration {
-    display: flex;
-    justify-content: center;
-    padding-right: 5rem;
+  margin-left: 30vw;
+  margin-top: 10vh;
 }
 
 .registration p {
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 1.5rem;
+  font-size: 1.125vw;
+  font-weight: 400;
+  margin-left: 5vw;
 }
 
 .registration-corner {
-    height: 3.5rem;
+  margin-left: -2.5vw;
 }
 
 .registration-input {
-    height: 3.5rem;
-    width: 40rem;
-    background-color: transparent;
-    color: white;
-    border: 0.5px solid rgba(243, 211, 211, 0.605);
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    font-weight: 600;
-    padding-left: 1rem;
-}
-
-.registration-input:active {
-    border: 2px solid white;
+  height: 8vh;
+  width: 35vw;
+  border-radius: 0.25vw;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  color: rgba(255, 255, 255, 0.724);
+  padding-left: 1vw;
+  font-weight: 500;
 }
 
 .registration-button {
-    height: 3.5rem;
-    width: 13rem;
-    box-sizing: border-box;
-    border-radius: 0.25rem;
-    background-color: red;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
+  height: 8vh;
+  width: 13vw;
+  margin-left: 0.5vw;
+  font-size: 1.5vw;
+  border-radius: 0.25vw;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: 700;
 }
 
-.registration-button:hover {
-    background-color: rgb(210, 16, 16);
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: white;
+.registration-input::placeholder {
+  color: rgba(255, 255, 255, 0.724);
+  font-weight: 500;
 }
 
 .footer-area {
-    padding-left: 8rem;
-}
-
-.helpline {
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 550;
-    margin-bottom: 3rem;
+  margin-top: 12vh;
+  margin-left: 12vw;
+  color: rgba(255, 255, 255, 0.724);
+  font-weight: 500;
 }
 
 .footer-links {
-    display: flex;
-    margin-bottom: 3rem;
+  width: 75vw;
+  margin-top: 6vh;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-li {
-    list-style-type: none;
-    margin-bottom: 1rem;
+.list a {
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1.5vh;
+  font-size: 0.9vw;
 }
 
-li a{
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.95rem;
-    margin-right: 13rem;
-}
-
-.footer-langbutton {
-    margin-bottom: 3rem;
+a {
+  color: rgba(255, 255, 255, 0.724);
 }
 
 .footer-langselect {
-    height: 2rem;
-    width: 7rem;
-    background-color: transparent;
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 0.25rem;
-}
-
-.footer-lang {
-    background-color: white;
-    color: black;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 0.5vw;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  margin-right: 0.5vw;
+  margin-top: 5vh;
+  background-color: transparent;
 }
 
 .footer-logo {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.95rem;
-    padding-bottom: 5rem;
+  margin-top: 5vh;
+  font-size: 0.9vw;
+  margin-bottom: 10vh;
 }
+
