@@ -308,6 +308,7 @@ header {
   font-size: 3.5vw;
   color: white;
   margin-right: 1vw;
+  transition: transform 0.1s linear;
 }
 
 .registration {
@@ -394,4 +395,233 @@ a {
   margin-top: 5vh;
   font-size: 0.9vw;
   margin-bottom: 10vh;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 95vh;
+  }
+
+  .navbar img {
+    width: 15vw;
+    margin-left: 3vw;
+  }
+
+  .options {
+    margin-right: 2vw;
+  }
+
+  .options .lang-select {
+    border-radius: 0.75vw;
+    margin-right: 1vw;
+    border: 1px solid white;
+    padding: 0.5vh 2vw 0.5vh 2vw;
+    margin-top: 7vh;
+  }
+
+  .signin-button {
+    border-radius: 0.75vw;
+  }
+
+  .nav-pannel {
+    bottom: 55vh;
+  }
+
+  .pannel-heading {
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 7vh;
+  }
+
+  .pannel-offer {
+    font-size: 2.75vw;
+    font-weight: 500;
+  }
+
+  .pannel-info {
+    font-weight: 400;
+    font-size: 2.75vw;
+    margin-top: 3vh;
+  }
+
+  .pannel-input {
+    width: 90vw;
+    border-radius: 0.75vw;
+    padding-left: 2.5vw;
+  }
+
+  .input-button {
+    width: 28vw;
+    margin-top: 2.5vh;
+    font-size: 3.2vw;
+    border-radius: 0.75vw;
+    font-weight: 500;
+  }
+
+  .extra {
+    height: 10vh;
+  }
+  .trending-now h4 {
+    margin-left: 2.5vw;
+    padding-top: 2vh;
+    font-size: 3vw;
+  }
+
+  .trend-img {
+    width: 95vw;
+    margin-left: 2.5vw;
+  }
+
+  .trend-img .card {
+    height: 38vh;
+    width: 25vw;
+  }
+
+  .img-num {
+    font-weight: 900;
+    font-size: 10vw;
+    bottom: 14vh;
+  }
+
+  .content-heading {
+    padding-top: 0vh;
+    margin-bottom: 2vh;
+    font-size: 3vw;
+    margin-left: 2.5vw;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    margin-left: 2.5vw;
+  }
+
+  .container .card {
+    height: 30vh;
+    width: 95vw;
+    margin-right: 0vw;
+    margin-bottom: 1.5vh;
+    border-radius: 3vw;
+  }
+
+  .container .card .card-body .card-title {
+    margin-bottom: 1vh;
+    margin-top: 1.5vh;
+  }
+
+  .card-icon {
+    font-size: 9vw;
+    margin-top: 0vh;
+  }
+
+  .smile-icon {
+    bottom: 6vh;
+    left: 7vw;
+  }
+
+  .smile-icon2 {
+    bottom: 3vh;
+  }
+
+  .fa-eye {
+    position: relative;
+    bottom: 3vh;
+  }
+
+  .fa-circle-down {
+    position: relative;
+    top: 0.5vh;
+  }
+
+  .fa-desktop {
+    position: relative;
+    bottom: 3.25vh;
+  }
+
+  .faq-heading {
+    margin-left: 2.5vw;
+    margin-top: 7vh;
+    font-size: 3vw;
+  }
+
+  .faq {
+    margin-left: 2.5vw;
+    margin-bottom: 1vh;
+    width: 95vw;
+  }
+
+  .faq-1 {
+    margin-top: 2.5vh;
+  }
+
+  .faq-ans {
+    margin-left: 2.5vw;
+    width: 95vw;
+    font-size: 3.5vw;
+    padding: 2.5vh 2.5vw 3vh 2.5vw;
+  }
+
+  .faq-select {
+    font-size: 3.5vw;
+    margin-left: 2vw;
+  }
+
+  .faq-button {
+    font-size: 7vw;
+    margin-right: 2vw;
+  }
+
+  .registration {
+    margin-left: 2.5vw;
+  }
+
+  .registration p {
+    font-size: 2.9vw;
+    margin-left: 0vw;
+  }
+
+  .registration-corner {
+    margin-left: 0vw;
+  }
+
+  .registration-input {
+    width: 95vw;
+    border-radius: 0.75vw;
+    background-color: transparent;
+    padding-left: 2.5vw;
+  }
+
+  .registration-button {
+    width: 30vw;
+    margin-left: 0vw;
+    margin-top: 2vh;
+    font-size: 3.5vw;
+    border-radius: 0.75vw;
+    font-weight: 500;
+  }
+
+  .footer-area {
+    margin-top: 10vh;
+    margin-left: 2.5vw;
+    font-weight: 400;
+  }
+
+  .footer-links {
+    width: 75vw;
+    flex-direction: column;
+  }
+
+  .list a {
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+
+  .footer-langselect {
+    border: 1px solid white;
+    padding: 0.5vh 2vw 0.5vh 2vw;
+    margin-top: 7vh;
+  }
+
+  .footer-logo {
+    font-size: 2.5vw;
+  }
 }
